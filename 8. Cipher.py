@@ -1,16 +1,3 @@
-# Funkcja z inputem
-# def greet(name):
-#     print(f"Hello {name}")
-#     print(f'How are you {name}')
-# greet('Szymon')
-#
-# #Funkcja z kilkoma inputami
-# def greet_with(name, location):
-#     print(f'Hello {name}')
-#     print(f'What is it like in {location}?')
-# #greet_with('Szymon', 'Plewiska')
-# #or
-# greet_with(name = 'Szymon',location='Plewiska')
 logo = """           
  ,adPPYba, ,adPPYYba,  ,adPPYba, ,adPPYba, ,adPPYYba, 8b,dPPYba,  
 a8"     "" ""     `Y8 a8P_____88 I8[    "" ""     `Y8 88P'   "Y8  
@@ -55,24 +42,3 @@ while run:
     if answer == "no":
         run = False
         print('Goodbye!')
-
-# def encrypt(plain_text,shift_amount):
-#     szyfr = ''
-#     for litera in plain_text:
-#         position = alphabet.index(litera)
-#         new_position = position + shift_amount
-#         szyfr += alphabet[new_position]
-#     print(f"The encoded text is {szyfr}")
-#
-# def decrypt(szyfr,shift_amount):
-#     plain_text = ''
-#     for litera in szyfr:
-#         new_position = alphabet.index(litera)
-#         position = new_position - shift_amount
-#         plain_text += alphabet[position]
-#     print(f"The decoded text is {plain_text}")
-#
-# if direction == 'encode':
-#     encrypt(plain_text=text, shift_amount=shift)
-# elif direction == 'decode':
-#     decrypt(szyfr=text, shift_amount=shift)
