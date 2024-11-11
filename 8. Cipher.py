@@ -17,7 +17,7 @@ a8"     "" 88 88P'    "8a 88P'    "8a a8P_____88 88P'   "Y8
 """
 print(logo)
 run = True
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 def cezar(start_text, shift_amount,cipher_direction):
     szyfr = ''
@@ -37,7 +37,7 @@ while run:
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
     shift = shift % 26
-    cezar(start_text=text,shift_amount=shift,cipher_direction=direction)
+    cezar(text,shift,direction)
     answer = input("Type 'yes' if you want to go again. Otherwise type 'no',\n").lower()
     if answer == "no":
         run = False
